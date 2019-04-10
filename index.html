@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!-- saved from url=(0057)http://domedb.perception.cs.cmu.edu/monototalcapture.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title> Efficient Online Multi-Person 2D Pose Tracking with Recurrent Spatio-Temporal Affinity Fields </title>
+	<link href="./Monocular Total Capture - CMU Panoptic Dataset_files/normalize.css" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="./Monocular Total Capture - CMU Panoptic Dataset_files/prism.css">
+	
+	
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="./Monocular Total Capture - CMU Panoptic Dataset_files/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link href="./Monocular Total Capture - CMU Panoptic Dataset_files/main.css" rel="stylesheet">
+		<!-- Optional theme -->
+	<link rel="stylesheet" href="./Monocular Total Capture - CMU Panoptic Dataset_files/bootstrap.min(1).css">
+	
+	<script async="" src="./Monocular Total Capture - CMU Panoptic Dataset_files/analytics.js"></script><script type="text/javascript" src="./Monocular Total Capture - CMU Panoptic Dataset_files/jquery.min.js"></script>
+	
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="./Monocular Total Capture - CMU Panoptic Dataset_files/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <style>
+      body {
+        padding-top: 20px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+    <link href="./Monocular Total Capture - CMU Panoptic Dataset_files/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+	<link href="./Monocular Total Capture - CMU Panoptic Dataset_files/myStyle.css" rel="stylesheet">
+	<link href="./Monocular Total Capture - CMU Panoptic Dataset_files/thumbnail.css" rel="stylesheet">
+  
+  	<style type="text/css" media="screen">
+		table td.highlighted{background-color:#87CEFA;}
+	</style> 
+	
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-72129944-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+
+<style>
+	h2
+	{
+		text-align: left;
+	}
+     p.note
+     {
+        font-family: Arial Black;
+        font-size: 14px;
+     }
+    ul.note 
+    {
+      list-style-type: none;
+      padding-left: 0px;
+    }
+
+    li.note {
+
+      font-family: Verdana;
+      position: relative;
+      padding-left: 7px;
+      font-size: 13px;
+    }
+
+    li.note:before {
+        content: "\e080";
+        font-family: 'Glyphicons Halflings';
+        font-size: 9px;
+        position: relative;
+        margin-right: 3px;
+        top: 3px;
+        color: #ccc;
+      } 
+</style>
+	
+</head>
+
+
+  <body style="">
+
+
+    <div class="container">
+
+	<h1> <center> Efficient Online Multi-Person 2D Pose Tracking with Recurrent Spatio-Temporal Affinity Fields </center> </h1>
+    
+        <p align="center"><font size="4"> <a href="https://www.raaj.tech/">Yaadhav Raaj</a>, <a href="http://www.cs.ucf.edu/~haroon/">Haroon Idrees</a>, <a href="https://www.gineshidalgo.com/">Gines Hidalgo</a>, <a href="http://www.cs.cmu.edu/~yaser/">Yaser Sheikh</a></font></p>
+
+  <p align="center"><font size="4"> Carnegie Mellon University </font></p>
+
+
+<center>
+  <!--<iframe width="800" height="450" src="./Monocular Total Capture - CMU Panoptic Dataset_files/rZn15BRf77E.html" frameborder="0" allowfullscreen=""></iframe>-->
+  <iframe width="800" height="450" src="https://www.youtube.com/embed/1Hg39MVNKBw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
+
+<h2>Abstract</h2>
+<p>
+We present an online approach to efficiently and simultaneously detect and track 2D poses of multiple people in a video sequence. We build upon Part Affinity Fields (PAF) representation designed for static images, and propose an architecture that can encode and predict Spatio-Temporal Affinity Fields (STAF) across a video sequence. In particular, we propose a novel temporal topology cross-linked across limbs which can consistently handle  body motions of a wide range of magnitudes. Additionally, we make the overall approach recurrent in nature, where the network ingests STAF heatmaps from previous frames and estimates those for the current frame. Our approach uses only online inference and tracking, and is currently the fastest and the most accurate bottom-up approach that is runtime-invariant to the number of people in the scene and accuracy-invariant to input frame rate of camera. Running at $\sim$30 fps on a single GPU at single scale, it achieves highly competitive results on the PoseTrack benchmarks.
+</p>
+
+ <h2>Publication</h2>
+
+  <!-- <a href="http://arxiv.org/abs/1704.07809">Monocular Total Capture: Posing Face, Body and Hands in the Wild</a> <br> -->
+  Efficient Online Multi-Person 2D Pose Tracking with Recurrent Spatio-Temporal Affinity Fields <br>
+  Yaadhav Raaj, Haroon Idrees, Gines Hidalgo, Yaser Sheikh <br>
+  Computer Vision and Pattern Recognition (CVPR) 2019 <b> (Oral) </b> <br>
+  [<a href="https://arxiv.org/abs/1811.11975"> arXiv </a>]
+  <p>
+
+ <h2>Runtime Code</h2>
+  We plan to release this into OpenPose before CVPR this year 
+  <p>
+
+	
+</p></div> <!-- /container -->
+
+  <script src="./Monocular Total Capture - CMU Panoptic Dataset_files/jquery.min(1).js"></script>
+  <script src="./Monocular Total Capture - CMU Panoptic Dataset_files/main.js"></script>
+  <script src="./Monocular Total Capture - CMU Panoptic Dataset_files/videopreview.js"></script>
+  
+  
+  
+
+<div id="coverTemperature" style="background-color: rgb(255, 255, 255); opacity: 0; display: block;"></div></body><script type="text/javascript" id="useragent-switcher">navigator.__defineGetter__("userAgent", function() {return "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.9 Safari/537.36"})</script></html>
