@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+body,td,th {
+	font-family: "Open Sans", sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+}
+
+a {
+	color: #0088cc;
+}
+
+h1 {
+	line-height: 40px;
+	font-size: 30px;
+	font-family: Helvetica, Georgia, Times, sans-serif
+}
+h2 {
+	color: #000000 ;
+	font-family: Helvetica, Georgia, Times, sans-serif;
+	font-size: 20px;
+	margin-top: 0.7em;
+	margin-bottom: 0.3em;
+	padding-bottom: 0.2em;
+	line-height: 1.0;
+	padding-top: 0.5em;
+	border-bottom: 1px solid #aaaaaa;
+}
+
+
+table.dataSet {
+    border: 2px solid grey;
+    border-collapse: collapse;
+    width 100%
+}
+
+table.mainTable {
+    width: 60%;
+    line-height: 1100%;
+    border: 2px solid grey;
+}
+
+table.dataDescript {
+  	font-size: 100px;
+}
+
+.dl-horizontal dt 
+{
+    white-space: normal;
+    width: 200px; 
+	text-align: left
+}
